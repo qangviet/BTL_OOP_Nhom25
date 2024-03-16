@@ -1,0 +1,22 @@
+ /*JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property  */
+.button {
+	-fx-background-color: transparent;
+	-fx-cursor: HAND;
+}
+.table-cell {
+	-fx-font-family: Times New Roman;
+	-fx-font-size: 16;
+}
+.label {
+	-fx-font-size: 16;
+	-fx-font-family: Times New Roman;
+}
+.small-label {
+	-fx-font-size: 13;
+	-fx-font-family: Times New Roman;
+	-fx-text-fill: #2893EB;
+}
+.big-label {
+	-fx-font-size: 27;
+	-fx-font-family: Times New Roman;
+}

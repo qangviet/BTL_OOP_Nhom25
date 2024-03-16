@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane1" prefHeight="255.0" prefWidth="682.0" style="-fx-border-color: lightgray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bai1.Scene01Controller">
+   <children>
+      <VBox fx:id="quizBox" layoutX="40.0" layoutY="39.0" prefHeight="450.0" prefWidth="573.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="39.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="342.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../check-mark.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink text="Thi GK2 Tin học 7">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="342.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../check-mark.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink text="Thi GK2 Sử Địa 7">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

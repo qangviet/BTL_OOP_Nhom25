@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="242.0" prefWidth="477.0" style="-fx-border-color: lightgray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bai1.Scene12Controller">
+   <children>
+      <Label layoutX="34.0" layoutY="35.0" text="Question bank" textFill="#009fe5">
+         <font>
+            <Font name="Book Antiqua" size="29.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="276.0" layoutY="37.0" onAction="#goQuestions" text="Questions">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="274.0" layoutY="75.0" onAction="#goCategory" text="Categories">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="273.0" layoutY="146.0" onAction="#goExport" text="Export">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="274.0" layoutY="111.0" onAction="#goImport" text="Import">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

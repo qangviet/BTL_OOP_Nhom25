@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="column1" alignment="CENTER_LEFT" layoutX="86.0" layoutY="91.0" prefHeight="25.0" prefWidth="134.0" spacing="8.0">
+         <children>
+            <ImageView fx:id="view_1a" fitHeight="21.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@four-arrows.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="textField_STT" alignment="CENTER" editable="false" prefHeight="13.0" prefWidth="36.0" style="-fx-background-color: #cdcdcd;" text="1" />
+            <ImageView fx:id="view_1b" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@options.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="view_1c" fitHeight="20.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@settings.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox fx:id="column2" alignment="CENTER_LEFT" layoutX="95.0" layoutY="180.0" prefHeight="40.0" prefWidth="134.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@zoom-in.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="delete_ques" fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bin.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <StackPane alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="65.0">
+               <children>
+                  <TextField fx:id="textField_mark" editable="false" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: #FFFFFF; -fx-border-color: lightgray;" text="1.00" />
+                  <ImageView fitHeight="22.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <StackPane.margin>
+                        <Insets right="5.0" />
+                     </StackPane.margin>
+                     <image>
+                        <Image url="@pencil.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+      <HBox fx:id="column3" alignment="CENTER_LEFT" layoutX="258.0" layoutY="132.0" prefHeight="25.0" prefWidth="88.0" spacing="8.0">
+         <children>
+            <ImageView fx:id="view_1a1" fitHeight="21.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@plus.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="checkBox" mnemonicParsing="false" />
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@options.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox fx:id="column_listview" alignment="CENTER_LEFT" layoutX="52.0" layoutY="273.0" prefHeight="40.0" prefWidth="569.0" spacing="5.0">
+         <children>
+            <ImageView fx:id="view_2a11" fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@options.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="label_infoQues" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

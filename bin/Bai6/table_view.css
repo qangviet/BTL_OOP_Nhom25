@@ -1,0 +1,14 @@
+.table-view .conner {
+	-fx-background-color: transparent;
+}
+.table-view .table-cell {
+	-fx-alignment: center-left ;
+	-fx-font-size: 14;
+	-fx-focus-traversable: false;
+}
+.table-view {
+	-fx-focus-traversable: false;
+}
+.table-view .column-header-background { 
+    visibility: hidden; -fx-padding: -1em;
+}

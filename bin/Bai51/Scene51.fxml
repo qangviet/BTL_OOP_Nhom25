@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bai51.Controller">
+   <children>
+      <Label layoutX="34.0" layoutY="14.0" text="Adding a new Quiz" textFill="#c12425">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="60.0" text="General" textFill="#c12425">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="100.0" text="Name" />
+      <Label layoutX="36.0" layoutY="125.0" text="Description" />
+      <TextField fx:id="nameTextField" layoutX="300.0" layoutY="95.0" prefHeight="26.0" prefWidth="263.0" />
+      <TextArea fx:id="descriptionTextArea" layoutX="300.0" layoutY="130.0" prefHeight="110.0" prefWidth="494.0" />
+      <CheckBox fx:id="checkDescription" layoutX="315.0" layoutY="256.0" mnemonicParsing="false" onAction="#DisplayDes" text="Display description on course page">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </CheckBox>
+      <Separator layoutX="5.0" layoutY="289.0" prefHeight="0.0" prefWidth="789.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <Label layoutX="42.0" layoutY="307.0" text="Timing" textFill="#c12425">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="hourOpen" layoutX="514.0" layoutY="340.0" minHeight="5.0" prefHeight="25.0" prefWidth="65.0" />
+      <Spinner fx:id="minuteOpen" layoutX="591.0" layoutY="340.0" minHeight="5.0" minWidth="10.0" prefHeight="25.0" prefWidth="65.0" />
+      <DatePicker fx:id="dateOpen" layoutX="300.0" layoutY="340.0" minHeight="5.0" minWidth="10.0" prefHeight="26.0" prefWidth="202.0" />
+      <DatePicker fx:id="dateClose" layoutX="300.0" layoutY="374.0" minHeight="5.0" minWidth="10.0" prefHeight="26.0" prefWidth="202.0" />
+      <Spinner fx:id="hourClose" layoutX="514.0" layoutY="374.0" minHeight="5.0" prefHeight="25.0" prefWidth="65.0" />
+      <Spinner fx:id="minuteClose" layoutX="591.0" layoutY="374.0" minHeight="5.0" minWidth="10.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="timelimitTextField" disable="true" layoutX="300.0" layoutY="408.0" prefHeight="26.0" prefWidth="61.0" />
+      <Spinner fx:id="timelimitSpinner" disable="true" layoutX="366.0" layoutY="408.0" minHeight="5.0" prefHeight="26.0" prefWidth="136.0" />
+      <TextField editable="false" layoutX="300.0" layoutY="442.0" prefHeight="26.0" prefWidth="250.0" text="Open attempts are submitted automatically" />
+      <Label layoutX="36.0" layoutY="340.0" text="Open the quiz" />
+      <Label layoutX="36.0" layoutY="374.0" text="Close the quiz" />
+      <Label layoutX="36.0" layoutY="413.0" text="Time limit" />
+      <Label layoutX="36.0" layoutY="446.0" text="When time expires" />
+      <CheckBox fx:id="checkTimeLimit" layoutX="514.0" layoutY="414.0" mnemonicParsing="false" onAction="#enabletimelimit" text="Enable" />
+      <ImageView fitHeight="15.0" fitWidth="20.0" layoutX="278.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hinhdau!.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="190.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hinhdauhoicham.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="493.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hinhdauhoicham.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="278.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hinhdauhoicham.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="278.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hinhdauhoicham.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="278.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hinhdauhoicham.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="createButton" layoutX="300.0" layoutY="495.0" mnemonicParsing="false" onAction="#Create" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: #c12425;" text="CREATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="400.0" layoutY="495.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: steelblue;" text="CANCEL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
